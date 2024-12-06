@@ -1,6 +1,6 @@
 pipeline{
     agent any{
-        stages(
+        stages{
             stage('Clone'){
                 steps{
                     echo "Cloned Successfully"
@@ -11,6 +11,6 @@ pipeline{
                     echo "Task is Completed"
                 }
             }
-        )
+        }
     }
 }
