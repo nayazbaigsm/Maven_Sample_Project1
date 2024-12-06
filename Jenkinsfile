@@ -3,13 +3,13 @@ pipeline{
         stages{
             stage('Clone'){
                 steps{
-                    echo "Cloned Successfully"
+                 bat  'mvn install'
                 }
             }
             stage('Complete'){
                 steps{
-                    echo "Task is Completed"
+                   bat 'java -jar java-project2-1.0-SNAPSHOT.jar'
                 }
             }
         }
-        }
+     }
