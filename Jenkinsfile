@@ -3,7 +3,7 @@ pipeline{
         stages{ 
             stage('Clone'){ 
                 steps{
-                 sh 'mvn install' 
+                 sh 'mvn install'  
                 }
             }
             stage('Complete'){
